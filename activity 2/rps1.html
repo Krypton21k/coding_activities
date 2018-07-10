@@ -1,0 +1,27 @@
+function rps(item){
+            var random = Math.floor(Math.random() * 3);
+            var randomItem;
+            
+            if(random === 0){
+                randomItem = 'rock';
+            }else if(random === 1){
+                randomItem = 'paper';
+            }else{
+                randomItem = 'scissors'
+            }
+            
+            if(item === randomItem){
+                document.getElementById('message').innerHTML = 'tie'
+            }else if(randomItem = 'rock'){
+                if(item === 'paper'){
+                    document.getElementById('message').innerHTML = 'paper beats rock, you win!'
+                }else{
+                    document.getElementById('message').innerHTML = 'rock beats scissors, you lose.'
+                }
+            }else if (randomItem = 'paper'){
+               //write code to deal with if computer chooses paper
+            }else{
+               //write code to deal with if computer chooses scissors
+            }
+            
+        }
