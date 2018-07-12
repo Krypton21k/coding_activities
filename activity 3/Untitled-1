@@ -1,0 +1,8 @@
+function animate(name, element){
+            document.getElementById(element).classList.toggle(name);
+            document.getElementById(element).classList.toggle('animated');
+            setTimeout(function(){
+                document.getElementById(element).classList.toggle(name);
+                document.getElementById(element).classList.toggle('animated');       
+            },1000)
+        }    
